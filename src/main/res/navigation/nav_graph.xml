@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/clubsFragment">
+
+    <fragment
+        android:id="@+id/clubsFragment"
+        android:name="com.dedenko.ui.fragments.TeamsFragment"
+        android:label="fragment_clubs"
+        tools:layout="@layout/fragment_teams" >
+        <action
+            android:id="@+id/action_clubsFragment_to_teamDetailsFragment"
+            app:destination="@id/teamDetailsFragment" />
+        <action
+            android:id="@+id/action_clubsFragment_to_dashboardFragment22"
+            app:destination="@id/dashboardFragment2" />
+    </fragment>
+
+
+
+
+
+    <fragment
+        android:id="@+id/teamDetailsFragment"
+        android:name="com.dedenko.ui.fragments.TeamDetailsFragment"
+        android:label="fragment_team_details"
+        tools:layout="@layout/fragment_team_details" >
+
+        <argument
+            android:name="details"
+            app:argType="com.dedenko.data.response.teams.Team" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dedenko.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/dashboardFragment2"
+        android:name="com.dedenko.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.dedenko.ui.home.HomeFragment"-->
+<!--        android:label="fragment_home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/dashboardFragment2"-->
+<!--        android:name="com.dedenko.ui.dashboard.DashboardFragment"-->
+<!--        android:label="fragment_dashboard"-->
+<!--        tools:layout="@layout/fragment_dashboard" />-->
+
+
+</navigation>

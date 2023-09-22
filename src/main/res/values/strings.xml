@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">FootballScout+</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="nav1">test</string>
+
+    <string name="image">Image</string>
+    <string name="english_premier_league">Explore european football clubs ! </string>
+    <string name="explore_epl_teams">All the clubs info in one place</string>
+    <string name="enter">Start scouting</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="premiership">Premier League Teams</string>
+    <string name="not_connected">Not connected to the internet, can\'t get players</string>
+    <string name="error_message">Something went wrong, try again</string>
+    <string name="phone">Phone:</string>
+    <string name="details">Details:</string>
+    <string name="website">Website:</string>
+    <string name="email">Email:</string>
+    <string name="stadium">Stadium:</string>
+    <string name="players">Players</string>
+    <string name="age_years">%1$s years old</string>
+</resources>
